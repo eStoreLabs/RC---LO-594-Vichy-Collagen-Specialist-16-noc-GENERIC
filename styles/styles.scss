@@ -154,7 +154,7 @@ body {
     &__subtitle {
       margin-top: 40px;
       font-family: $regular;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 15px;
       line-height: 40px;
     }
@@ -207,7 +207,7 @@ body {
       top: 0;
       left: 0;
       font-family: $regular;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 10px;
       text-align: right;
       color: $white;
@@ -355,7 +355,7 @@ body {
       margin-left: 0;
       padding: 40px 20px;
       font-family: $regular;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 20px;
       text-transform: uppercase;
       color: $white;
@@ -479,6 +479,7 @@ body {
         @include text;
         font-family: $regular;
         font-size: 20px;
+        font-weight: 400;
         background-color: #f4f4f4;
         color: #000;
         overflow: hidden;
@@ -486,6 +487,7 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
+        max-height: 0;
         -webkit-transition: max-height 0.5s ease-out;
         transition: max-height 0.5s ease-out;
         border-radius: 10px;
@@ -498,7 +500,7 @@ body {
       &__title {
         @include text;
         font-family: $regular;
-        font-weight: 400;
+        font-weight: 500;
         position: relative;
         padding: 17px 50px 17px 15px;
         font-size: 24px;
@@ -818,6 +820,7 @@ body {
     &__title {
       margin-left: 0;
       margin-bottom: 0;
+      max-width: 340px;
     }
 
     &__disclaimer {
@@ -1185,7 +1188,7 @@ body {
       }
 
       &__title {
-        font-size: 40px;
+        font-size: 39px;
       }
 
       &__subtitle {
@@ -1386,7 +1389,7 @@ body {
       min-height: 490px;
       padding-top: 100px;
       padding-bottom: 100px;
-      background: url(../images/routine-bg.png) center center no-repeat;
+      background: url(../images/routine-bg.png) right center no-repeat;
       background-size: cover;
       display: -webkit-box;
       display: flex;
@@ -1553,12 +1556,12 @@ body {
 
       &__content {
         max-width: 45%;
-        padding-left: 8px;
+        padding-left: 33px;
         padding-top: 100px;
       }
       &__subtitle {
         max-width: 365px;
-        font-size: 40px;
+        font-size: 39px;
 
         & span {
           font-weight: 500;
@@ -1666,7 +1669,6 @@ body {
     .es-routine {
       &__title {
         padding-left: 20px;
-        max-width: 400px;
         font-size: 35px;
         line-height: 1.4;
         font-weight: 400;
@@ -1713,13 +1715,19 @@ body {
       }
 
       &__type-subtitle,
-      &__problem-subtitle,
-      &__action-subtitle,
       &__effect-subtitle,
       &__consistency-subtitle {
         font-size: 20px;
         padding-right: 30px;
         padding-left: 30px;
+      }
+
+      &__problem-subtitle,
+      &__action-subtitle {
+        font-size: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-weight: 400;
       }
     }
 
