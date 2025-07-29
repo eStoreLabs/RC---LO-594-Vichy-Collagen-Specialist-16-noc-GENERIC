@@ -945,6 +945,7 @@ body {
         &--first {
           -webkit-box-pack: start;
           justify-content: flex-start;
+          margin-right: 35px;
         }
       }
     }
@@ -1415,23 +1416,43 @@ body {
 
       &__step {
         position: absolute;
-        left: 60%;
+        top: 15px;
+        right: 4%;
         display: -webkit-box;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row;
-        gap: 26px;
-        margin-top: -251px;
-        margin-left: -14%;
+        gap: 35px;
+        transform: scale(1.1);
+        margin-top: 30px;
+        margin-left: 0;
       }
 
       &__step-item-title {
+        font-size: 10px;
+        padding: 3px 6px;
         background: $white;
         color: $red;
 
         &--big {
+          font-size: 40px;
+          position: absolute;
+          right: 0;
+          top: -20px;
           color: $white;
+
+          &-1 {
+            right: -25px;
+          }
+
+          &-2 {
+            right: 15px;
+          }
+
+          &-3 {
+            right: 23px;
+          }
         }
       }
 
@@ -1439,6 +1460,12 @@ body {
         color: $white;
         font-size: 13px;
         font-weight: 400;
+        margin-top: -10px;
+      }
+
+      &__step-item-title-group {
+        position: relative;
+        margin-left: 10px;
       }
 
       &__disclaimer {
@@ -1539,7 +1566,7 @@ body {
     .es-routine {
       &__step {
         position: absolute;
-        left: 70%;
+        right: 4%;
       }
     }
 
@@ -1561,7 +1588,7 @@ body {
     .es-routine {
       &__step {
         position: absolute;
-        left: 70%;
+        right: 4%;
       }
     }
   }
@@ -1692,7 +1719,7 @@ body {
       }
       &__step {
         position: absolute;
-        left: 73%;
+        left: 61%;
       }
     }
   }
@@ -1758,53 +1785,6 @@ body {
       &__disclaimer {
         bottom: 4%;
         left: 3%;
-      }
-    }
-
-    .es-routine {
-      position: relative;
-      &__step {
-        margin-left: 0;
-        margin-top: 30px;
-        position: absolute;
-        top: 15px;
-        right: 10%;
-        gap: 60px;
-        transform: scale(1.1);
-        left: auto;
-      }
-
-      &__step-item-title {
-        font-size: 10px;
-        padding: 3px 6px;
-
-        &--big {
-          font-size: 40px;
-          position: absolute;
-          right: 0;
-          top: -20px;
-
-          &-1 {
-            right: -25px;
-          }
-
-          &-2 {
-            right: 15px;
-          }
-
-          &-3 {
-            right: 23px;
-          }
-        }
-      }
-
-      &__step-item-subtitle {
-        margin-top: -10px;
-      }
-
-      &__step-item-title-group {
-        position: relative;
-        margin-left: 5px;
       }
     }
   }
